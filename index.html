@@ -1,64 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Правила ОФОРМЛЕНИЯ</title>
+    <title>HTML-документ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+
+        .container {
+            background-color: #ffffcc;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(100px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .moving-text {
+            display: inline-block;
+            animation: moveText 3s infinite alternate ease-in-out;
+            color: red;
+        }
+
+        .Zagolovok {
+            font-size: 10px;
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .HTML {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .Naprimer {
+            margin-left: 200px;
+        }
+
+        .right {
+            color: red;
+        }
+
+        .left {
+            color: purple;
+        }
+
+        .up {
+            color: aqua;
+        }
+
+        .down {
+            color: orange;
+        }
+
+        .naprimer {
+            margin-left: 75px;
+        }
+        .prizma {
+            color: aqua;
+        }
+        .ot {
+            color: green;
+        }
+        .slovo {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;"><span class="yg">Некоторые</span> <span class="red">правила</span> <span
-            class="green">ОФОРМЛЕНИЯ</span></h1>
-    <p style="margin-left: 35%; display: flex-box; width: 500px;"><span class="blue">Существуют</span> принятые в <span
-            class="izd">издательском деле</span> правила среды,
-        в которой работают <font size="1"><u>браузеры</u></font>.
-        Так, <b>заголовок первого уровня <span class="blue">H1</span></b> выводится крупным <span class="brown">жирным
-            шрифтом</span>,
-        Так, <b>заголовок первого уровня <span class="blue">H1</span></b> выводится <span class="brown">крупным жирным
-            шрифтом</span>,
-        <i>цитаты</i> <b><u>CITE</u></b> - курсивом,
-        абзацы <b>P</b> отделяются<sub>1</sub> друг от друга<sup>1</sup> <s>пустыми строками</s>,
-        абзацы <b>P</b> отделяются<sub>1</sub> <span class="drug">друг от друга<sup>1</sup></span> <s>пустыми
-            строками</s>,
-        элементы списка <b>UL</b> <s>снабжаются</s> маркерами,
-        <span class="yellow">элементы списка</span> <b>OL</b> - номерами.
-    </p>
-    <style>
-        body {
-            background-color: yellowgreen;
-            background-color: aquamarine;
+    <div class="container">
+        <div class="Zagolovok">
+            <h1><em>Бегущая строка</em></h1>
+        </div>
+        <p>Язык <span class="HTML">HTML</span> позволяет задавать движение для различных текстов.</p>
+        <div class="Naprimer">
+            <em>Например</em>, можно заставить слово
+        </div>
 
-        }
 
-        .red {
-            @@ -26, 14+26, 25 @@ color: green;
-        }
 
-        .blue {
-            color: aqua;
-            color: brown;
-        }
 
-        .yellow {
-            color: yellow;
-            background-color: green;
-        }
+        <p class="bold moving-text"><em>ИНФОРМАТИКА</em></p>
+        <p>двигаться <span class="right">вправо,</span><span class="left"> влево,</span><span class="up">вверх,</span> и
+            <span class="down"> вниз</span> по экрану.</p>
+        <p>Также <span class="HTML">HTML</span> позволяет оформлять тексты различными символами.</p>
 
-        .brown {
-            color: brown;
-            color: yellow;
-        }
 
-        .yg {
-            color: yellowgreen;
-        }
+        <div class="naprimer">
+            <p><em>Например,</em> отображать в окне браузера текста вида:</p>
+        </div>
 
-        .izd {
-            background-color: yellow;
-        }
+        <div class="slovo">
+        <p><strong>Слово <em>призма</em> происходит от греческого <em><span class="prizma">prisma</span></em> и
+                буквально означает <span class="ot">"отипленное"</span></p> </strong>
+        </div>
 
-        .drug {
-            background-color: blueviolet;
-        }
-    </style>
+    </div>
+</body>
+
+</html>
